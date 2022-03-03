@@ -33,7 +33,7 @@ const game = async (msg, bot) => {
     const name = msg.message.chat.first_name;
     dataBase["chatId"] = await randomNum(5);
     if (data === "again") {
-      return bot.sendMessage(chatId, "загадай цифру, заебал", gameOptions);
+      return bot.sendMessage(chatId, "угадай цифру, заебал", gameOptions);
     }
     if (data === "gofuck") {
       return bot.sendMessage(chatId, `${name}, иди нахуй`);
